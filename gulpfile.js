@@ -7,6 +7,7 @@ const del = require('del');
 const browserSync = require('browser-sync').create();
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
+const imagemin = require('gulp-imagemin');
 
 const jsFiles = [
     './src/js/lib.js',
@@ -33,8 +34,14 @@ function styles() {
 
                 }))
                 .pipe(sourcemaps.write('.'))
-                .pipe(gulp.dest('./build/css'))
+                .pipe(gulp.dest('./dist/css'))
                 .pipe(browserSync.stream());
+}
+
+function images() {
+    return gulp.src('src/images/*')
+                .pipe(imagemin())
+                .pipe(gulp.dest('dist/images'));
 }
 
 function scripts() {
@@ -43,7 +50,7 @@ function scripts() {
                 .pipe(uglify({
                     toplevel: true
                 }))
-                .pipe(gulp.dest('./build/js'))
+                .pipe(gulp.dest('./dist/js'))
                 .pipe(browserSync.stream());
 }
 
@@ -60,7 +67,7 @@ function watch() {
 }
 
 function clean() {
-    return del(['build/*']);
+    return del(['dist/*']);
 }
 
 gulp.task('styles', styles);
@@ -68,7 +75,8 @@ gulp.task('script', scripts);
 gulp.task('watch', watch);
 
 gulp.task('build', gulp.series(clean,
-                        gulp.parallel(styles, scripts)
+                        gulp.parallel(styles, scripts),
+                        images
                     ));
 
 gulp.task('dev', gulp.series('build', 'watch'));
