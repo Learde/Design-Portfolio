@@ -6,8 +6,15 @@ body {
     margin: 0;
 }
 
-@import "components/page/page";
+@import "./abstracts/variables";
 
-@import "components/header/header";
-@import "components/header/__logo-img/header__logo-img";
-@import "components/header/__logo-link/header__logo-link";
+@import "./components/page/page";
+
+@import "./components/container/container";
+
+@import "./components/header/header";
+@import "./components/header/__logo-img/header__logo-img";
+@import "./components/header/__logo-link/header__logo-link";
+@import "./components/header/__nav/header__nav";
+@import "./components/header/__nav-link/header__nav-link";
+@import "./components/header/__container/header__container";

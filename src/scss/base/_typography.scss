@@ -1,0 +1,22 @@
+body {
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: 1.8rem;
+	font-weight: 300;
+	line-height: 1.7;
+	color: $color-grey;
+}
+
+.heading-primary {
+    color: $color-white;
+    backface-visibility: hidden;
+    font-size: 4.95rem;
+    font-weight: 300;
+}
+
+.heading-secondary {
+    font-size: 3.6rem;
+    font-weight: 200;
+    line-height: 4.5rem;
+    color: $color-white;
+    text-shadow: -1px -1px 1px rgba($color-black, 0.75);
+}

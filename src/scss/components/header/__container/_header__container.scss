@@ -1,0 +1,7 @@
+.header__container {
+    display: grid;
+    height: inherit;
+    grid-template-columns: 1fr 0.75fr;
+    align-content: center;
+    margin: 0 auto;
+}
