@@ -1,6 +1,13 @@
-body {
+html {
     font-size: 10px;
+}
+
+body {
     margin: 0;
 }
 
 @import "components/page/page";
+
+@import "components/header/header";
+@import "components/header/__logo-img/header__logo-img";
+@import "components/header/__logo-link/header__logo-link";
