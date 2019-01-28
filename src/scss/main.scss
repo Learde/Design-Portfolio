@@ -18,3 +18,10 @@ body {
 @import "./components/header/__nav/header__nav";
 @import "./components/header/__nav-link/header__nav-link";
 @import "./components/header/__container/header__container";
+
+@import "./components/section-welcome/section-welcome";
+@import "./components/section-welcome/__text/section-welcome__text";
+@import "./components/section-welcome/__secondary-heading/section-welcome__secondary-heading";
+@import "./components/section-welcome/__primary-heading/section-welcome__primary-heading";
+@import "./components/section-welcome/__primary-heading/--little/section-welcome__primary-heading--little";
+@import "./components/section-welcome/__container/section-welcome__container";

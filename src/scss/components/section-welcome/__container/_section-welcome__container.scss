@@ -1,0 +1,11 @@
+.section-welcome__container {
+    display: grid;
+    grid-template-columns: minmax(15rem, 76rem);
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
