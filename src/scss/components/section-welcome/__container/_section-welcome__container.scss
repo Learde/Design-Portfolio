@@ -1,9 +1,8 @@
 .section-welcome__container {
-    display: grid;
-    grid-template-columns: minmax(15rem, 76rem);
+    display: block;
+    min-width: 15rem;
+    max-width: 76rem;
     margin: 0 auto;
-    justify-items: center;
-    align-items: center;
     position: absolute;
     top: 50%;
     left: 50%;

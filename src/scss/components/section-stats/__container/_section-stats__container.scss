@@ -1,0 +1,8 @@
+.section-stats__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10rem;
+    grid-row-gap: 4rem;
+    margin: 0 auto;
+}

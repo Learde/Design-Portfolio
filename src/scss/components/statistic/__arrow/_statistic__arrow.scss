@@ -1,0 +1,13 @@
+.statistic__arrow {
+    width: 0; 
+    height: 0; 
+    border-left: .7rem solid transparent;
+    border-right: .7rem solid transparent;
+    
+    border-top: 1.25rem solid #000; //fake color
+
+    position: absolute;
+    right: 0;
+    top: -1.23rem;
+    transform: translateX(50%);
+}

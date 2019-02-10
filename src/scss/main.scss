@@ -25,3 +25,25 @@ body {
 @import "./components/section-welcome/__primary-heading/section-welcome__primary-heading";
 @import "./components/section-welcome/__primary-heading/--little/section-welcome__primary-heading--little";
 @import "./components/section-welcome/__container/section-welcome__container";
+
+@import "./components/section-stats/section-stats";
+@import "./components/section-stats/__text/section-stats__text";
+@import "./components/section-stats/__stats/section-stats__stats";
+@import "./components/section-stats/__stat/section-stats__stat";
+@import "./components/section-stats/__secondary-heading/section-stats__secondary-heading";
+@import "./components/section-stats/__container/section-stats__container";
+
+@import "./components/secondary-heading/secondary-heading";
+
+@import "./components/statistic/statistic";
+@import "./components/statistic/__heading/statistic__heading";
+@import "./components/statistic/__graph-outer/statistic__graph-outer";
+@import "./components/statistic/__graph-inner/statistic__graph-inner";
+@import "./components/statistic/__arrow/statistic__arrow";
+@import "./components/statistic/__graph-outer/--pink/statistic__graph-outer--red";
+@import "./components/statistic/__graph-inner/--green/statistic__graph-inner--green";
+@import "./components/statistic/__graph-inner/--pink/statistic__graph-inner--pink";
+@import "./components/statistic/__graph-inner/--yellow/statistic__graph-inner--yellow";
+@import "./components/statistic/__arrow/--green/statistic__arrow--green";
+@import "./components/statistic/__arrow/--pink/statistic__arrow--pink";
+@import "./components/statistic/__arrow/--yellow/statistic__arrow--yellow";
